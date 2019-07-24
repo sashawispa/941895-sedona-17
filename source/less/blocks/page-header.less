@@ -5,12 +5,16 @@
 }
 
 .nav__list {
-  & a{@white-color}
-  &:first-child {
-    box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2);
+  &a {
+    @white-color;
   }
+
+  &:first-child {
+    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
+  }
+
   &:last-child {
-    box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
   }
   margin: 0;
   padding: 0;
@@ -21,12 +25,10 @@
 .nav__item {
   padding: 0;
   margin: 0;
-
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-
   color: @white-color;
-  box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2), inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
   background-color: @blue-color;
 }
