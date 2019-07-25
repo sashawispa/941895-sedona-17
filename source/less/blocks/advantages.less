@@ -1,3 +1,13 @@
+.advantages-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+}
+
 .advantages__item {
   list-style-type: none;
   color: @white-color;
@@ -24,4 +34,29 @@
 .advantages__description {
   font-size: 14px;
   line-height: 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item-card {
+    width: 256px;
+  }
+
+  .advantages__item-graycard {
+    display: flex;
+  }
+
+  .advantages-wrapper {
+    width: 680px;
+  }
+
+  .features {
+    padding: 0;
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-wrapper {
+    width: 1160px;
+  }
 }

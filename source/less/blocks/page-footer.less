@@ -1,3 +1,8 @@
+.page-footer-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .page-footer__tag {
   font-weight: bold;
   font-size: 21px;
@@ -16,4 +21,16 @@
 
 .copyright__link {
   color: @black-color;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer-wrapper {
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  width: 1160px;
 }
