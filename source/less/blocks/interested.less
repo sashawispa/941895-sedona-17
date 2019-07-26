@@ -1,3 +1,8 @@
+.interested__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .interested__title {
   font-size: 21px;
   line-height: 26px;
@@ -12,4 +17,16 @@
   color: @black-color;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .interested__wrapper {
+    width: 680px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .interested__wrapper {
+    width: 1160px;
+  }
 }

@@ -1,3 +1,8 @@
+.promo__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .promo__title {
   font-size: 18px;
   line-height: 26px;
@@ -10,4 +15,16 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__wrapper {
+    width: 680px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    width: 1160px;
+  }
 }

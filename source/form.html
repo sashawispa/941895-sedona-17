@@ -8,8 +8,8 @@
   <body>
     <header class="page-header">
 
-      <nav class="page-geader__nav nav">
-
+      <nav class="page-header__nav nav">
+        <div class="nav__wrapper">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--active">Главная</a>
@@ -24,17 +24,19 @@
               <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
-          <button class="nav__button nav__button--open nav__button--close">
-            <span class="visually-hidden">Открыть меню сайта</span>
+        </div>
+        <div class="nav__control">
+          <button class="nav__button nav__button--open" type="button">
+            Открыть меню сайта
           </button>
-
+          <button class="nav__button nav__button--close" type="button">
+            Закрыть меню сайта
+          </button>
+        </div>
+        <a class="page-header__logo">
+          <img class="page-header__logo-city-of-sedona" src="img/logo-city-of-sedona.svg" alt="Логотип «Sedona»">
+        </a>
       </nav>
-            <a class="page-header__logo">
-              <img class="page-header__logo-city-of-sedona" src="img/logo-city-of-sedona.svg" alt="Логотип «Sedona»">
-            </a>
-              <div class="page-header__image page-header__image--min">
-                <img src="#" alt="Sedona"></img>
-              </div>
     </header>
 
       <main class="page-main">
@@ -42,7 +44,8 @@
         </main>
 
         <footer class="page-footer">
-          <a class="page-footer__tag" href="#">#VisitSedona</a>
+          <div class="page-footer__wrapper">
+            <a class="page-footer__tag" href="#">#VisitSedona</a>
             <div class="page-footer__social social">
               <ul class="social__list">
                 <li class="social__item">
@@ -61,8 +64,9 @@
 
             <div class="page-footer__copyright copyright">
               <b class="copyright__text">Разработано:</b>
-                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </div>
+          </div>
 
         </footer>
 
