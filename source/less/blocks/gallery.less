@@ -4,10 +4,22 @@
 }
 
 .gallery__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
+.gallery__item {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.gallery__post {
+  margin: 0;
+  padding-top: 22px;
+}
+
 .post__photo-name {
+  padding-left: 20px;
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
@@ -15,15 +27,27 @@
   text-transform: uppercase;
   color: @black-color;
 }
-
 .post__author {
+  padding-left: 20px;
   font-size: 14px;
   line-height: 24px;
   text-align: left;
   color: @light-gray-color;
 }
 
+.post__counter {
+  display: flex;
+}
+
+.post__like {
+  width: 23px;
+  height: 23px;
+}
+
 .post__like-value {
+  margin: 0;
+  padding-left: 14px;
+  padding-bottom: 23px;
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
@@ -43,10 +67,22 @@
   }
 
   .gallery__item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+    background-color: @white-gray-color;
     &:first-child {
       width: 648px;
     }
     width: 324px;
+  }
+
+  .gallery__post {
+    padding: 0;
+  }
+
+  .post__counter {
+    padding-top: 30px;
   }
 }
 

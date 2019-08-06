@@ -33,6 +33,20 @@
   padding-top: 20px;
   padding-bottom: 21px;
   color: @white-color;
+  &:hover {
+    background-color: @blue-color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @blue-color-active;
+  }
+}
+
+.nav__link--active {
+  &:hover {
+    background-color: @blue-color;
+  }
 }
 
 .nav__item {
@@ -43,17 +57,6 @@
   text-decoration: none;
   box-shadow: 0 -1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
   background-color: @blue-color;
-}
-
-.nav__item a[href] {
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #5496bd;
-  }
 }
 
 .nav-header__logo-sedona {
@@ -115,17 +118,27 @@
   }
 
   .nav__item {
+    padding-top: 22px;
+    padding-bottom: 23px;
     color: @black-color;
     background-color: @white-color;
   }
 
   .nav__link {
+    padding: 0;
     color: @black-color;
+    &:hover {
+      color: @blue-color;
+      background-color: @white-color;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .nav-header__logo {
     order: 1;
-
   }
 }
 

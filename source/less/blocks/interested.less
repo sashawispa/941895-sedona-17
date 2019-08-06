@@ -35,6 +35,16 @@
   background-color: @blue-color;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @blue-color-hover;
+  }
+
+  &:active {
+    background-color: @blue-color-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
 }
 
@@ -42,10 +52,31 @@
   .interested__wrapper {
     width: 680px;
   }
+
+  .interested__title {
+    font-size: 30px;
+  }
+
+  .interested__discription {
+    padding: 0 140px 40px 140px;
+  }
+
+  .interested__button {
+    padding: 17px 136px;
+    margin-left: 130px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .interested__wrapper {
     width: 1160px;
+  }
+
+  .interested__discription {
+    padding: 0 360px 40px 383px;
+  }
+
+  .interested__button {
+    margin-left: 360px;
   }
 }

@@ -17,15 +17,15 @@
 }
 
 .social__link {
-  color: @black-color;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__list {
-  margin: 0;
+  margin: 0 83px 37px 83px;
   padding: 0;
-  margin-left: 83px;
-  margin-right: 83px;
-  margin-bottom: 37px;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -38,6 +38,14 @@
   width: 48px;
   height: 46px;
   background-color: @blue-color;
+
+  &:hover {
+    background-color: @blue-color-hover;
+  }
+
+  &:active {
+    background-color: @blue-color-active;
+  }
 }
 
 .page-footer__copyright {
@@ -55,13 +63,40 @@
 
 .copyright__link {
   color: @black-color;
+
+  &:hover {
+    color: @blue-color;
+  }
+  &:active {
+    color: @black-color;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
     width: 680px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: inherit;
+  }
+
+  .page-footer__tag {
+    margin-left: 60px;
+  }
+
+  .social__list {
+    padding-top: 30px;
+    margin-left: 112px;
+    margin-right: 20px;
+  }
+
+  .copyright__text {
+    padding-left: 70px;
+    padding-top: 38px;
+  }
+
+  .copyright__link {
+    padding-top: 26px;
   }
 }
 
