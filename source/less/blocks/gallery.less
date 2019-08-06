@@ -4,31 +4,18 @@
 }
 
 .gallery__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
-.post__photo-name {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 24px;
-  text-align: left;
-  text-transform: uppercase;
-  color: @black-color;
+.gallery__item {
+  border-bottom: 1px solid #eeeeee;
 }
 
-.post__author {
-  font-size: 14px;
-  line-height: 24px;
-  text-align: left;
-  color: @light-gray-color;
-}
-
-.post__like-value {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 24px;
-  text-align: left;
-  color: @black-color;
+.gallery__post {
+  margin: 0;
+  padding-top: 22px;
 }
 
 @media (min-width: @tablet-width) {
@@ -43,10 +30,19 @@
   }
 
   .gallery__item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+    background-color: @white-gray-color;
+
     &:first-child {
       width: 648px;
     }
     width: 324px;
+  }
+
+  .gallery__post {
+    padding: 0;
   }
 }
 

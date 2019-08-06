@@ -1,0 +1,32 @@
+.copyright__text {
+  padding-left: 97px;
+  padding-top: 10px;
+  padding-right: 5px;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.copyright__link {
+  color: @black-color;
+
+  &:hover {
+    color: @blue-color;
+  }
+
+  &:active {
+    color: @black-color;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    padding-left: 70px;
+    padding-top: 38px;
+  }
+
+  .copyright__link {
+    padding-top: 26px;
+  }
+}

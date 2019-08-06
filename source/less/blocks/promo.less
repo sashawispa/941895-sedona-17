@@ -1,9 +1,12 @@
 .promo__wrapper {
   width: 320px;
   margin: 0 auto;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .promo__title {
+  margin: 0;
+  padding: 44px 60px 30px 60px;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -11,6 +14,8 @@
 }
 
 .promo__slogan {
+  margin: 0;
+  padding: 0 24px 31px 24px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -20,6 +25,16 @@
 @media (min-width: @tablet-width) {
   .promo__wrapper {
     width: 680px;
+    border-bottom: none;
+  }
+
+  .promo__title {
+    font-size: 30px;
+    padding: 76px 200px 30px 200px;
+  }
+
+  .promo__slogan {
+    padding: 0 130px 75px 110px;
   }
 }
 

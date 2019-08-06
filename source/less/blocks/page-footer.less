@@ -1,9 +1,14 @@
 .page-footer__wrapper {
   width: 320px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-footer__tag {
+  margin-top: 41px;
+  margin-left: 91px;
+  margin-bottom: 41px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -11,23 +16,19 @@
   color: @black-color;
 }
 
-.social__link {
-  color: @black-color;
-}
-
-.social__list {
-  list-style-type: none;
-}
-
-.copyright__link {
-  color: @black-color;
+.page-footer__copyright {
+  display: flex;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
     width: 680px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: inherit;
+  }
+
+  .page-footer__tag {
+    margin-left: 60px;
   }
 }
 
