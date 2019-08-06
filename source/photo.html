@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
 
-      <nav class="page-header__nav nav--open nav--nojs">
+      <nav class="page-header__nav nav nav--open nav--nojs">
 
         <div class="nav__wrapper">
           <button class="nav__button" type="button">
@@ -175,21 +175,6 @@
           </div>
         </footer>
 
-    <script>
-        var navMain = document.querySelector('.page-header__nav');
-        var navToggle = document.querySelector('.nav__button');
-
-        navMain.classList.remove('nav--nojs');
-
-        navToggle.addEventListener('click', function() {
-            if (navMain.classList.contains('nav--close')) {
-                navMain.classList.remove('nav--close');
-                navMain.classList.add('nav--open');
-            } else {
-                navMain.classList.add('nav--close');
-                navMain.classList.remove('nav--open');
-            }
-        });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

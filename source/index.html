@@ -10,7 +10,7 @@
 
 <header class="page-header">
 
-  <nav class="page-header__nav nav--open nav--nojs">
+  <nav class="page-header__nav nav nav--open nav--nojs">
 
     <div class="nav__wrapper">
       <button class="nav__button" type="button">
@@ -84,17 +84,17 @@
         </li>
         <ul class="features">
           <li class="features__item features__item--housing">
-            <h3 class="features__title features__title--housing ">Жилье</h3>
+            <h3 class="features__title features__title--housing">Жилье</h3>
             <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
 
           <li class="features__item features__item--souvenirs">
-            <h3 class="features__title features__title--souvenirs ">Сувениры</h3>
+            <h3 class="features__title features__title--souvenirs">Сувениры</h3>
             <p class="features__description">Не только китайского, но и местного производства!</p>
           </li>
 
           <li class="features__item features__item--food">
-            <h3 class="features__title features__title--food ">Еда</h3>
+            <h3 class="features__title features__title--food">Еда</h3>
             <p class="features__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </li>
         </ul>
@@ -196,21 +196,6 @@
   </div>
 </footer>
 
-<script>
-    var navMain = document.querySelector('.page-header__nav');
-    var navToggle = document.querySelector('.nav__button');
-
-    navMain.classList.remove('nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('nav--close')) {
-            navMain.classList.remove('nav--close');
-            navMain.classList.add('nav--open');
-        } else {
-            navMain.classList.add('nav--close');
-            navMain.classList.remove('nav--open');
-        }
-    });
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
