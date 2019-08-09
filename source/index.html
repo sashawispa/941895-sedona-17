@@ -45,7 +45,11 @@
         </li>
       </ul>
       <a class="nav-header__logo">
-        <img class="nav-header__logo-sedona" src="img/logo-sedona-mobile.svg" alt="Логотип «Sedona»">
+        <picture>
+          <source media="(min-width: 1198px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="nav-header__logo-sedona" src="img/logo-sedona-mobile.svg" alt="Логотип «Sedona»">
+        </picture>
       </a>
     </div>
 
@@ -61,7 +65,12 @@
   <section class="welcome">
     <div class="welcome__wrapper">
       <div class="welcome__image">
-        <img src="#" alt="Sedona"></img>
+        <img class="welcome__image-logo" src="img/text-sedona-index.svg" alt="Велком Седона">
+        <picture>
+          <source media="(min-width: 1198px)" srcset="img/bg-intro-triangle-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+          <img class="welcome__image-triangle" src="img/bg-intro-triangle-mobile.svg" alt="Треугольник">
+        </picture>
       </div>
       <p class="welcome__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="welcome__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -75,12 +84,17 @@
       <ul class="advantages__list">
 
         <li class="advantages__item">
+
           <div class="advantages__item-card">
             <h3 class="advantages__title">Настоящий городок</h3>
             <span class="advantages__number">— №1 —</span>
             <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="advantages__image-city" src="img/image-city.jpg" width="320" height="260" alt="Седона - настоящий городок">
+          <picture>
+            <source media="(min-width: 1198px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg">
+            <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg">
+            <img class="advantages__image-city" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg" alt="Седона - настоящий городок">
+          </picture>
         </li>
         <ul class="features">
           <li class="features__item features__item--housing">
@@ -100,13 +114,16 @@
         </ul>
 
         <li class="advantages__item">
-          <img class="advantages__image-bridge" src="img/image-bridge.jpg" width="320" height="260" alt="Мост дьявола">
-          <div class="advantages__item-card">
+          <div class="advantages__item-card advantages__item-card--bridge">
             <h3 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h3>
             <span class="advantages__number">— №2 —</span>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-
+          <picture>
+            <source media="(min-width: 1198px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg">
+            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg">
+            <img class="advantages__image-bridge" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg" alt="Мост дьявола">
+          </picture>
         </li>
         <div class="advantages__item-graycard">
           <li class="advantages__item advantages__item--gray">

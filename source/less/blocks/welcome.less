@@ -1,11 +1,39 @@
 .welcome__wrapper {
   width: 320px;
   margin: 0 auto;
+  margin-top: -32px;
+}
+
+.welcome__image {
+  width: 100%;
+  height: 390px;
+  background-color: @white-color;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 768px auto;
+  }
+}
+
+.welcome__image-logo {
+  width: 281px;
+  height: 214px;
+  margin-top: 90px;
+  margin-left: 20px;
+  margin-bottom: 54px;
+}
+
+.welcome__image-triangle {
+  width: 320px;
+  height: 26px;
 }
 
 .welcome__title {
   margin: 0;
-  padding: 45px 20px 30px 20px;
+  padding: 45px 20px 30px 25px;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
@@ -25,7 +53,35 @@
 
 @media (min-width: @tablet-width) {
   .welcome__wrapper {
-    width: 680px;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .welcome__image {
+    width: 100%;
+    height: 518px;
+    background-color: @white-color;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  .welcome__image-logo {
+    width: 460px;
+    height: 350px;
+    margin-top: 77px;
+    margin-left: 154px;
+    margin-bottom: 28px;
+  }
+
+  .welcome__image-triangle {
+    width: 768px;
+    height: 57px;
   }
 
   .welcome__title {
@@ -39,7 +95,30 @@
 
 @media (min-width: @desktop-width) {
   .welcome__wrapper {
-    width: 1160px;
+    width: 1200px;
+  }
+
+  .welcome__image {
+    width: 100%;
+    height: 518px;
+    background-color: @white-color;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  .welcome__image-logo {
+    margin-left: 351px;
+  }
+
+  .welcome__image-triangle {
+    width: 1200px;
+    height: 57px;
   }
 
   .welcome__title {
