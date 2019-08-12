@@ -45,11 +45,23 @@
 
 @media (min-width: @tablet-width) {
   .advantages__wrapper {
-    width: 680px;
+    width: 768px;
+  }
+
+  .advantages__item {
+    display: flex;
+
+    &--gray {
+      flex-direction: column;
+    }
   }
 
   .advantages__item-card {
     width: 256px;
+
+    &--bridge {
+      order: 2;
+    }
   }
 
   .advantages__item-graycard {
@@ -67,7 +79,7 @@
 
 @media (min-width: @desktop-width) {
   .advantages__wrapper {
-    width: 1160px;
+    width: 1200px;
   }
 
   .advantages__item-card {

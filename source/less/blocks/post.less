@@ -23,6 +23,11 @@
 .post__like {
   width: 23px;
   height: 23px;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  opacity: 0.3;
 }
 
 .post__like-value {
@@ -37,7 +42,36 @@
 }
 
 @media (min-width: @tablet-width) {
+  .post__post {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .post__counter {
-    padding-top: 30px;
+    padding-top: 35px;
+    padding-right: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post__post {
+    margin-top: -96px;
+  }
+
+  .post__photo-name {
+    color: @white-color;
+  }
+
+  .post__author {
+    color: @white-color;
+  }
+
+  .post__like {
+    color: @white-color;
+    opacity: 1;
+  }
+
+  .post__like-value {
+    color: @white-color;
   }
 }
