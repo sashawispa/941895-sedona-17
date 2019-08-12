@@ -25,13 +25,14 @@
 
   .gallery__list {
     padding: 0;
+    padding-left: 60px;
     display: flex;
     flex-wrap: wrap;
   }
 
   .gallery__item {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     border-bottom: none;
     background-color: @white-gray-color;
 
@@ -53,8 +54,12 @@
 
   .gallery__item {
     &:first-child {
-      width: 1190px;
+      width: 1200px;
     }
-    width: 385px;
+    width: 400px;
+  }
+
+  .gallery__list {
+    padding: 0;
   }
 }

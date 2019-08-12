@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <link href="css\style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+  <header class="page-header">
 
-      <nav class="page-header__nav nav nav--open nav--nojs">
+    <nav class="page-header__nav nav nav--open nav--nojs">
 
-        <div class="nav__wrapper">
-          <button class="nav__button" type="button">
-            <svg class="nav__cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="22px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+      <div class="nav__wrapper">
+        <button class="nav__button" type="button">
+          <svg class="nav__cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="22px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
               <polygon fill="#ffffff" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1"/>
             </svg>
 
-            <svg class="nav__burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="21px"
-                  fill="#81b3d2" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+          <svg class="nav__burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="21px"
+               fill="#81b3d2" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
                   <g>
                     <rect width="22.928" height="3.964"/>
                     <rect y="9.009" width="22.928" height="3.964"/>
@@ -25,33 +26,51 @@
                   </g>
       </svg>
 
-          </button>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link nav__link--active">Главная</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="photo.html">Фото и видео</a>
-            </li>
-          </ul>
-          <ul class="nav__list nav__list--right">
-            <li class="nav__item">
-              <a class="nav__link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-          <a class="nav-header__logo">
+        </button>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="photo.html">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="nav__list nav__list--right">
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+        <a class="nav-header__logo">
+          <picture>
+            <source media="(min-width: 1198px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
             <img class="nav-header__logo-sedona" src="img/logo-sedona-mobile.svg" alt="Логотип «Sedona»">
-          </a>
-        </div>
+          </picture>
+        </a>
+      </div>
+    </nav>
+  </header>
 
-
-      </nav>
-    </header>
 
       <main class="page-main">
+
+        <section class="promo">
+          <div class="promo__wrapper">
+            <div class="promo__image">
+              <img class="promo__image-logo" src="img/text-sedona.svg" alt="Седона">
+              <picture>
+                <source media="(min-width: 1198px)" srcset="img/bg-intro-triangle-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+                <img class="promo__image-triangle" src="img/bg-intro-triangle-mobile.svg" alt="Треугольник">
+              </picture>
+            </div>
+            <h1 class="promo__title">Оставьте свой отзыв</h1>
+            <p class="promo__slogan">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+        </section>
 
         </main>
 
