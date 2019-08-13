@@ -7,25 +7,45 @@
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
+  <svg style="display: none">
+    <symbol viewBox="0 0 22.199 22.199" id="icon-cross">
+      <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1"/>
+    </symbol>
+    <symbol viewBox="0 0 22.928 21.982" id="icon-burger">
+      <g>
+        <rect width="22.928" height="3.964"/>
+        <rect y="9.009" width="22.928" height="3.964"/>
+        <rect y="18.018" width="22.928" height="3.964"/>
+      </g>
+    </symbol>
+    <symbol viewBox="0 0 60 60" id="icon-copyright">
+      <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+    </symbol>
+    <symbol viewBox="0 0 74.695 72.346" id="icon-house">
+      <g>
+        <path d="M29.503,65.345h16V41.407h-16V65.345z M42.566,62.407H32.441V44.345h10.125V62.407z"/>
+        <path d="M72.62,39.44l2.075-2.078l-9.907-9.913V0.47H50.974v13.161L37.349,0L0,37.363l2.077,2.078l7.832-7.832v37.799H5.971v2.938 h63.875v-2.938h-5.059v-37.8L72.62,39.44z M53.913,3.408h7.938v21.104l-7.938-7.94V3.408z M61.85,69.407H12.846V28.671 L37.348,4.169L61.85,28.671V69.407z"/>
+        <path d="M29.753,27.21c0,4.28,3.47,7.75,7.75,7.75s7.75-3.47,7.75-7.75c0-4.279-3.47-7.75-7.75-7.75S29.753,22.93,29.753,27.21z M37.503,22.241c2.745,0,4.97,2.225,4.97,4.97s-2.225,4.971-4.97,4.971s-4.97-2.226-4.97-4.971S34.759,22.241,37.503,22.241z"/>
+        <rect x="16.909" y="41.407" width="3" height="3.938"/>
+        <rect x="22.846" y="41.407" width="3" height="3.938"/>
+        <rect x="16.909" y="47.407" width="3" height="3.938"/>
+        <rect x="22.846" y="47.407" width="3" height="3.938"/>
+        <rect x="48.846" y="41.407" width="3" height="3.938"/>
+        <rect x="54.784" y="41.407" width="3" height="3.938"/>
+        <rect x="48.846" y="47.407" width="3" height="3.938"/>
+        <rect x="54.784" y="47.407" width="3" height="3.938"/>
+      </g>
+    </symbol>
+  </svg>
     <header class="page-header">
 
       <nav class="page-header__nav nav nav--open nav--nojs">
 
         <div class="nav__wrapper">
           <button class="nav__button" type="button">
-            <svg class="nav__cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="22px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
-              <polygon fill="#ffffff" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1"/>
-            </svg>
+            <svg class="nav__cross" width="23px" height="22px"><use xlink:href="#icon-cross"></use></svg>
 
-            <svg class="nav__burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="21px"
-                  fill="#81b3d2" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-                  <g>
-                    <rect width="22.928" height="3.964"/>
-                    <rect y="9.009" width="22.928" height="3.964"/>
-                    <rect y="18.018" width="22.928" height="3.964"/>
-                  </g>
-      </svg>
-
+            <svg class="nav__burger" width="23px" height="21px"><use xlink:href="#icon-burger"></use></svg>
           </button>
           <ul class="nav__list">
             <li class="nav__item">
@@ -76,6 +96,10 @@
               <li class="gallery__item">
                 <div class="gallery__post post">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1198px)" srcset="img/photo-sunset-desktop@1x.webp, img/photo-sunset-desktop@2x.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp, img/photo-sunset-tablet@2x.webp">
+                    <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp, img/photo-sunset-mobile@2x.webp">
+
                     <source media="(min-width: 1198px)" srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg">
                     <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg">
                     <img class="post__photo" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg" alt="Фото Неродные просторы">
@@ -97,6 +121,10 @@
               <li class="gallery__item">
                 <div class="gallery__post post">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1198px)" srcset="img/photo-cactus-desktop@1x.webp, img/photo-cactus-desktop@2x.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp, img/photo-cactus-tablet@2x.webp">
+                    <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp, img/photo-cactus-mobile@2x.webp">
+
                     <source media="(min-width: 1198px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg">
                     <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg">
                     <img class="post__photo" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg" alt="Фото Местная растительность">
@@ -117,6 +145,10 @@
               <li class="gallery__item">
                 <div class="gallery__post post">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1198px)" srcset="img/photo-roads-desktop@1x.webp, img/photo-roads-desktop@2x.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp, img/photo-roads-tablet@2x.webp">
+                    <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp, img/photo-roads-mobile@2x.webp">
+
                     <source media="(min-width: 1198px)" srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg">
                     <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg">
                     <img class="post__photo" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg" alt="Фото Дорога на север">
@@ -137,6 +169,10 @@
               <li class="gallery__item">
                 <div class="gallery__post post">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1198px)" srcset="img/photo-bridge-desktop@1x.webp, img/photo-bridge-desktop@2x.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp, img/photo-bridge-tablet@2x.webp">
+                    <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp, img/photo-bridge-mobile@2x.webp">
+
                     <source media="(min-width: 1198px)" srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg">
                     <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg">
                     <img class="post__photo" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg" alt="Фото Мост дьявола">
@@ -155,6 +191,33 @@
             </li>
             </ul>
           </div>
+        </section>
+
+        <section class="video">
+          <div class="video__wrapper">
+            <h2 class="video__header">Все еще сомневаетесь?</h2>
+            <p class="video__content">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <div class="video__player">
+              <picture>
+                <source type="image/webp" media="(min-width: 1198px)" srcset="img/video-desktop@1x.webp, img/video-desktop@2x.webp">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp, img/video-tablet@2x.webp">
+                <source type="image/webp" srcset="img/video-mobile@1x.webp, img/video-mobile@2x.webp">
+
+                <source media="(min-width: 1198px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg">
+                <img class="video__picture" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Видеопрезентация">
+              </picture>
+              <div class="video__controls">
+                <div class="video__control-slider">
+                  <div class="video__control-slider-line"></div>
+                  <div class="video__control-slider-toggle"></div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
         </section>
         </main>
 
@@ -201,7 +264,7 @@
             <div class="page-footer__copyright copyright">
               <span class="copyright__text">Разработано</span>
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="50px" viewBox="0 0 60 60"><path fill="#000000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+                <svg class="copyright__icon" width="40px" height="50px"><use xlink:href="#icon-copyright"></use></svg>
               </a>
             </div>
           </div>

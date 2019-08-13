@@ -8,24 +8,46 @@
 </head>
 <body>
 
+<svg style="display: none">
+  <symbol viewBox="0 0 22.199 22.199" id="icon-cross">
+    <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1"/>
+  </symbol>
+  <symbol viewBox="0 0 22.928 21.982" id="icon-burger">
+    <g>
+      <rect width="22.928" height="3.964"/>
+      <rect y="9.009" width="22.928" height="3.964"/>
+      <rect y="18.018" width="22.928" height="3.964"/>
+    </g>
+  </symbol>
+  <symbol viewBox="0 0 60 60" id="icon-copyright">
+    <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+  </symbol>
+  <symbol viewBox="0 0 74.695 72.346" id="icon-house">
+    <g>
+      <path d="M29.503,65.345h16V41.407h-16V65.345z M42.566,62.407H32.441V44.345h10.125V62.407z"/>
+      <path d="M72.62,39.44l2.075-2.078l-9.907-9.913V0.47H50.974v13.161L37.349,0L0,37.363l2.077,2.078l7.832-7.832v37.799H5.971v2.938 h63.875v-2.938h-5.059v-37.8L72.62,39.44z M53.913,3.408h7.938v21.104l-7.938-7.94V3.408z M61.85,69.407H12.846V28.671 L37.348,4.169L61.85,28.671V69.407z"/>
+      <path d="M29.753,27.21c0,4.28,3.47,7.75,7.75,7.75s7.75-3.47,7.75-7.75c0-4.279-3.47-7.75-7.75-7.75S29.753,22.93,29.753,27.21z M37.503,22.241c2.745,0,4.97,2.225,4.97,4.97s-2.225,4.971-4.97,4.971s-4.97-2.226-4.97-4.971S34.759,22.241,37.503,22.241z"/>
+      <rect x="16.909" y="41.407" width="3" height="3.938"/>
+      <rect x="22.846" y="41.407" width="3" height="3.938"/>
+      <rect x="16.909" y="47.407" width="3" height="3.938"/>
+      <rect x="22.846" y="47.407" width="3" height="3.938"/>
+      <rect x="48.846" y="41.407" width="3" height="3.938"/>
+      <rect x="54.784" y="41.407" width="3" height="3.938"/>
+      <rect x="48.846" y="47.407" width="3" height="3.938"/>
+      <rect x="54.784" y="47.407" width="3" height="3.938"/>
+    </g>
+  </symbol>
+  </svg>
+
 <header class="page-header">
 
   <nav class="page-header__nav nav nav--open nav--nojs">
 
     <div class="nav__wrapper">
       <button class="nav__button" type="button">
-        <svg class="nav__cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="22px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
-              <polygon fill="#ffffff" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1"/>
-            </svg>
+        <svg class="nav__cross" width="23px" height="22px"><use xlink:href="#icon-cross"></use></svg>
 
-        <svg class="nav__burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="21px"
-              fill="#81b3d2" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-                  <g>
-                    <rect width="22.928" height="3.964"/>
-                    <rect y="9.009" width="22.928" height="3.964"/>
-                    <rect y="18.018" width="22.928" height="3.964"/>
-                  </g>
-      </svg>
+        <svg class="nav__burger" width="23px" height="21px"><use xlink:href="#icon-burger"></use></svg>
 
       </button>
       <ul class="nav__list">
@@ -91,13 +113,18 @@
             <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <picture>
-            <source media="(min-width: 1198px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg">
+            <source type="image/webp" media="(min-width: 1198px)" srcset="img/main-city-desktop@1x.webp, img/main-city-desktop@2x.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp, img/main-city-tablet@2x.webp">
+            <source type="image/webp" srcset="img/main-city-mobile@1x.webp, img/main-city-mobile@2x.webp">
+
+            <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg">
             <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg">
             <img class="advantages__image-city" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg" alt="Седона - настоящий городок">
           </picture>
         </li>
         <ul class="features">
           <li class="features__item features__item--housing">
+            <svg class="features__icon" width="37px" height="36px"><use xlink:href="#icon-house"></use></svg>
             <h3 class="features__title features__title--housing">Жилье</h3>
             <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
@@ -120,6 +147,10 @@
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1198px)" srcset="img/main-bridge-desktop@1x.webp, img/main-bridge-desktop@2x.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp, img/main-bridge-tablet@2x.webp">
+            <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp, img/main-bridge-mobile@2x.webp">
+
             <source media="(min-width: 1198px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg">
             <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg">
             <img class="advantages__image-bridge" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg" alt="Мост дьявола">
@@ -159,7 +190,19 @@
 
   <section class="map">
     <div class="map__wrapper">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676290.890588466!2d-112.91591835703812!3d34.85608546819997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1564750914973!5m2!1sru!2sru"  frameborder="0" style="border:0" allowfullscreen></iframe>
+      <svg class="map__marker" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27" xml:space="preserve">
+        <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
+        <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
+      </svg>
+      <picture>
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp">
+        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp">
+
+        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg">
+        <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg" alt="Карта местности">
+      </picture>
     </div>
   </section>
 </main>
@@ -207,7 +250,7 @@
     <div class="page-footer__copyright copyright">
       <span class="copyright__text">Разработано</span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="50px" viewBox="0 0 60 60"><path fill="#000000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+        <svg class="copyright__icon" width="40px" height="50px"><use xlink:href="#icon-copyright"></use></svg>
       </a>
     </div>
   </div>
