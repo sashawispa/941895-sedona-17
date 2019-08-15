@@ -49,8 +49,42 @@
   left: 58px;
   margin-top: -3px;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: @white-color;
   cursor: pointer;
+}
+
+.video__player-buttons {
+  position: relative;
+  width: 238px;
+  padding: 20px;
+  margin-left: 20px;
+  background-color: @white-gray-color;
+}
+
+.video__button {
+  border: none;
+  fill: @gray-button;
+  background-color: @white-gray-color;
+  cursor: pointer;
+
+  &:hover {
+    fill: @black-color;
+  }
+
+  &:active {
+    fill: @black-color;
+    opacity: 0.3;
+  }
+
+  &--fullscreen {
+    position: absolute;
+    right: 15px;
+  }
+
+  &--subtitles {
+    position: absolute;
+    right: 65px;
+  }
 }
 
 @media (min-width: @tablet-width) {
