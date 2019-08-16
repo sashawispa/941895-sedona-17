@@ -19,6 +19,7 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+  color: @light-gray-color;
 }
 
 .video__controls {
@@ -104,10 +105,59 @@
   .video__player {
     padding-left: 60px;
   }
+
+  .video__controls {
+    margin-top: -99px;
+  }
+
+  .video__control-slider {
+    margin: 0;
+    width: 388px;
+    padding: 45px 93px;
+    padding-right: 167px;
+  }
+
+  .video__control-slider-toggle {
+    top: 45px;
+    left: 205px;
+  }
+
+  .video__player-buttons {
+    width: 565px;
+    margin-top: -76px;
+    background-color: transparent;
+  }
+
+  .video__button {
+    fill: @white-color;
+    background-color: transparent;
+
+    &:hover {
+      fill: @white-color;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: @white-color;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .video__wrapper {
     width: 1200px;
+  }
+
+  .video__player {
+    padding-left: 199px;
+  }
+
+  .video__control-slider {
+    width: 540px;
+  }
+
+  .video__player-buttons {
+    width: 711px;
   }
 }

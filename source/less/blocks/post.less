@@ -1,5 +1,6 @@
 .post__photo-name {
-  padding-left: 20px;
+  margin: 0;
+  padding: 22px 20px 0 0;
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
@@ -9,7 +10,8 @@
 }
 
 .post__author {
-  padding-left: 20px;
+  margin: 0;
+  padding: 0 20px 12px 0;
   font-size: 14px;
   line-height: 24px;
   text-align: left;
@@ -21,9 +23,7 @@
 }
 
 .post__like {
-  width: 23px;
-  height: 23px;
-  background-image: url("../img/icon-like.svg");
+  padding-bottom: 25px;
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
@@ -32,8 +32,7 @@
 
 .post__like-value {
   margin: 0;
-  padding-left: 14px;
-  padding-bottom: 23px;
+  padding: 4px 20px 23px 5px;
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
@@ -47,15 +46,29 @@
     justify-content: space-between;
   }
 
-  .post__counter {
-    padding-top: 35px;
-    padding-right: 21px;
+
+  .post__photo-name {
+    padding: 22px 20px 0 20px;
+  }
+
+  .post__author {
+    padding: 0 20px 22px 20px;
+  }
+
+  .post__like-value {
+    padding: 35px 21px 12px 10px;
+  }
+
+  .post__like {
+    padding: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .post__post {
-    margin-top: -96px;
+    position: relative;
+    margin-top: -98px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .post__photo-name {
@@ -67,7 +80,7 @@
   }
 
   .post__like {
-    color: @white-color;
+    fill: @white-color;
     opacity: 1;
   }
 
