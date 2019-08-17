@@ -21,6 +21,10 @@
   &--gray {
     background-color: @gray-color;
     color: @black-color;
+
+    &:last-child {
+      padding-bottom: 20px;
+    }
   }
 }
 
@@ -30,9 +34,13 @@
 
 .advantages__title {
   margin: 0;
-  padding: 43px 20px 20px 20px;
+  padding: 35px 19px 8px 20px;
   font-size: 18px;
   line-height: 26px;
+
+  &--gray {
+    padding: 27px 19px 8px 20px;
+  }
 }
 
 .advantages__number {
@@ -42,11 +50,12 @@
 
 .advantages__description {
   margin: 0;
-  padding: 20px 20px 45px 20px;
+  padding: 15px 20px 40px 20px;
   font-size: 14px;
   line-height: 21px;
 
   &--gray {
+    margin-bottom: -18px;
     color: @light-gray-color;
   }
 }
@@ -93,7 +102,6 @@
   .advantages__description {
     padding: 30px 40px 40px 40px;
   }
-
 }
 
 @media (min-width: @desktop-width) {
